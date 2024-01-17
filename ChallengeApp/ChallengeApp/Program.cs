@@ -22,7 +22,10 @@ foreach (char c in letters)
 
 }
 
-foreach (int cnt in count)
+Console.WriteLine("Wyniki dla liczby: "+number);
+
+
+for (int i = 0; i < count.Length ; i++)
 {
-    Console.WriteLine(cnt);
+    Console.WriteLine(i + " => " +count[i]);
 }

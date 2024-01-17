@@ -1,16 +1,28 @@
-﻿string name = "Ewa";
-char sex = 'K';
-int age = 17;
+﻿using System;
 
-if (sex == 'K' && age < 30)
+int number = 1122334455;
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
+
+int[] count = new int[10];
+
+
+foreach (char c in letters)
 {
-    Console.WriteLine("Kobieta poniżej 30 lat");
+    if (c == '0') { count[0]++; }
+    else if (c == '1') { count[1]++; }
+    else if (c == '2') { count[2]++; }
+    else if (c == '3') { count[3]++; }
+    else if (c == '4') { count[4]++; }
+    else if (c == '5') { count[5]++; }
+    else if (c == '6') { count[6]++; }
+    else if (c == '7') { count[7]++; }
+    else if (c == '8') { count[8]++; }
+    else if (c == '9') { count[9]++; }
+
 }
-else if (name == "Ewa" && age == 30)
+
+foreach (int cnt in count)
 {
-    Console.WriteLine("Ewa, lat 30");
-}
-else if (sex != 'K' && age < 18)
-{
-    Console.WriteLine("Niepełnoletni mężczyzna");
+    Console.WriteLine(cnt);
 }
